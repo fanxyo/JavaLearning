@@ -5,7 +5,7 @@ package com.fanxy.branchDemo;
  * @BelongsPackage: com.fanxy.branchDemo
  * @Author: fanxingyu
  * @CreateTime: 2023-11-03  09:19
- * @Description: TODO
+ * @Description: TODO 分支结构
  * @Version: 1.0
  */
 public class SwitchDemo {

@@ -5,7 +5,7 @@ package com.fanxy.base;
  * @BelongsPackage: com.fanxy.base
  * @Author: fanxingyu
  * @CreateTime: 2023-11-02  17:53
- * @Description: TODO
+ * @Description: TODO 访问修饰符
  * @Version: 1.0
  */
 abstract class Caravan {
