@@ -8,7 +8,7 @@ package com.fanxy.loop;
  * @Description: TODO while循环书写格式及执行流程
  * @Version: 1.0
  */
-public class WhileDemo1 {
+public class WhileDemo3 {
     public static void main(String[] args) {
         //知道循环次数使用for,不知道循环次数使用while
         /*

@@ -8,7 +8,7 @@ package com.fanxy.loop;
  * @Description: TODO
  * @Version: 1.0
  */
-public class WhileTest1 {
+public class WhileTest4 {
     public static void main(String[] args) {
         // 使用while循环解决问题，理解什么时候使用while、for
         // 1.定义变量存储珠穆朗玛峰的高度和纸张的厚度

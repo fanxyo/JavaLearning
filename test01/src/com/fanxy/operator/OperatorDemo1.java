@@ -86,26 +86,105 @@ public class OperatorDemo1 {
         // 3、赋值运算符
         //基本赋值运算符：=
         //扩展赋值运算符：+= -= *= /= %= 隐含强制类型转化
-        double a = 666;
-        double b = 520;
-        //a += b;// a = (double)(a + b)
-        //System.out.println(a);
+//        double a = 666;
+//        double b = 520;
+//        //a += b;// a = (double)(a + b)
+//        //System.out.println(a);
+//
+//        a-=b;
+//        System.out.println(a);
+//
+//        int m = 10;
+//        int n = 5;
+//        m%=n;
+//        System.out.println(m);
+//
+//        System.out.println("---------------------");
+//        byte x = 10;
+//        byte y = 30;
+//        //x=x+y; // 编译出错
+//        x+=y; // 等价公式：x = (byte)(x+y)
+//        System.out.println(x);
 
-        a-=b;
-        System.out.println(a);
 
-        int m = 10;
-        int n = 5;
-        m%=n;
-        System.out.println(m);
+        // 4、关系运算符 结果为布尔类型的值：true或false
+//        // >  >=  <  <=  ==  !=
+//        int a = 10;
+//        int b = 5;
+//        boolean rs = a > b;
+//        System.out.println(rs);
+//
+//        System.out.println(a >= b);
+//        System.out.println(a < b);
+//        System.out.println(a <= b);
+//        System.out.println(a == b);
+//        System.out.println(a != b);
 
-        System.out.println("---------------------");
-        byte x = 10;
-        byte y = 30;
-        //x=x+y; // 编译出错
-        x+=y; // 等价公式：x = (byte)(x+y)
-        System.out.println(x);
+        // 5、逻辑运算符
+        // & | ！ ^  &&(短路与) ||(短路非)
+        // 需求：要求手机满足尺寸大于等于6.95，且内存大于8
+//        double size = 6.8;
+//        int storage = 16;
+//        // 1. & 前后的条件必须都为true，结果才为true
+//        boolean rs1 = size >= 6.95 & storage >= 8;
+//        System.out.println(rs1);
+//
+//        // 需求2：要求手机要么满足尺寸大于等于6.95，要么内存 大于8
+//        // 2. | 只要条件中有一个为true，结果就是true
+//        boolean rs2 = size >= 6.95 & storage >= 8;
+//        System.out.println(rs2);
 
+        // 3. ！ 取反
+//        System.out.println(!true);
+//        System.out.println(!false);
+//        System.out.println(!(2 > 1));
+//
+//        // 4. ^ 前后结果相同时返回false，不同时返回true
+//        System.out.println(true ^ true);
+//        System.out.println(false ^ false);
+//        System.out.println(false ^ true);
+//        System.out.println(true ^ false);
+
+        // && || 少一些执行，性能较好
+        // 5. && 判断结果与“&“一样，过程不同：左边为false，右边不执行
+//        int i = 10;
+//        int j = 20;
+////        System.out.println(i > 100 & ++j > 99);
+//        System.out.println(i > 100 && ++j > 99);
+//        System.out.println(j);
+//
+//        // 6. || 判断结果与“|“一样，过程不同：左边为true，右边不执行
+//        int m = 10;
+//        int n = 20;
+////        System.out.println(m > 100 | ++n > 60);
+//        System.out.println(m > 3 || ++n > 60);
+//        System.out.println(n);
+
+        // 6、三元运算符
+        // 判断成绩是否及格
+        double score = 99;
+        String rs = score >= 60 ? "成绩及格" : "成绩不及格";
+        System.out.println(rs);
+
+        // 找出2个整数中的较大值，并输出
+        int a = 99;
+        int b = 69;
+        int max = a > b ? a : b;
+        System.out.println(max);
+
+        //找出3个整数中的较大值
+        int i =10;
+        int j = 45;
+        int k = 34;
+
+        int temp = i > j ? i : j;
+        int max2 = temp > k ? temp : k;
+        System.out.println(max2);
+
+        // 运算符优先级
+        // && 优先级大于 || ,()优先级最高
+        System.out.println(10 > 3 || 10 > 3 && 10 < 3);
+        System.out.println((10 > 3 || 10 > 3) && 10 < 3);
 
     }
 }
